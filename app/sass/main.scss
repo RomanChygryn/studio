@@ -1,0 +1,10 @@
+@import "variables";
+@import "header";
+
+body {
+  font-size: 62.5%;
+  background: #ccc;
+  .wrapper {
+    display: grid;
+  }
+}
