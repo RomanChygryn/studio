@@ -1,3 +1,5 @@
+// header start
+
 .header {
   box-sizing: border-box;
   height: 100vh;
@@ -10,13 +12,22 @@
   grid-template-areas:
     "header__logo header__nav header__nav"
     "header__hero header__hero header__hero";
+
+// logo
+
   .header__logo {
     grid-area: header__logo;
     min-width: 200px;
   }
+
+
+// nav
   .header__nav {
     grid-area: header__nav;
     margin-left: auto;
+    .nav__button {
+      display: none;
+    }
     .nav__navbar {
       max-width: 1000px;
       margin: 0;
@@ -37,6 +48,9 @@
       }
     }
   }
+
+
+// hero
   .header__hero {
     grid-area: header__hero;
     display: flex;
@@ -60,6 +74,30 @@
       }
       .hero__button {
         align-self: flex-start;
+      }
+    }
+  }
+
+// header collapse
+}
+
+
+// media queries
+
+// max width 1370px
+
+@media(max-width: 1370px) {
+  .header {
+    position: relative;
+    .header__nav {
+      position: absolute;
+      right: 0;
+      .nav__navbar {
+        border: 1px solid black;
+        grid-template-columns: 1fr;
+        .navbar__item {
+          padding-left: 0;
+        }
       }
     }
   }
