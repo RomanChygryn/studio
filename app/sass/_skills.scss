@@ -1,0 +1,53 @@
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 720px;
+  grid-gap: 20px;
+  .skills__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .list__title {
+      width: 70%;
+      font-size: 3rem;
+      color: #171717;
+      margin-bottom: 4rem;
+    }
+    .list__content {
+      width: 70%;
+      .title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+      .bar {
+        height: 5px;
+        background: #d8d8d8;
+        width: 100%;
+        margin-bottom: 4rem;
+        .progress__bar {
+          height: 5px;
+          background: #d8d8d8;
+          width: 0%;
+          transition: all 4s ease;
+        }
+      }
+    }
+  }
+  .skills__shoot {
+    background: url(../img/pencil.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 520px;
+  }
+}
+
+
+// media queries
+
+@media(max-width: 1240px) {
+  .skills {
+    grid-template-columns: 1fr;
+  }
+}
