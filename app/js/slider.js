@@ -25,5 +25,24 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-     setTimeout(showSlides, 2000); // Change image every 2 seconds
+
+}
+var opinionIndex = 0;
+showOpinion();
+
+function showOpinion() {
+    var i;
+    var opinion = document.getElementsByClassName("opinion__item");
+    var opiniondot = document.getElementsByClassName("opinion__dot");
+    for (i = 0; i < opinion.length; i++) {
+       opinion[i].style.display = "none";
+    }
+    opinionIndex++;
+    if (opinionIndex > opinion.length) {opinionIndex = 1}
+    for (i = 0; i < opiniondot.length; i++) {
+        opiniondot[i].className = opiniondot[i].className.replace(" active", "");
+    }
+    opinion[opinionIndex-1].style.display = "block";
+    opiniondot[opinionIndex-1].className += " active";
+    setTimeout(showOpinion, 2000); // Change image every 2 seconds
 }

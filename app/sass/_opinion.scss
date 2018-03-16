@@ -1,1 +1,51 @@
 
+/* Slideshow container */
+.opinion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  height: 100vh;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  .opinion__item {
+    display: none;
+    .item__name {
+
+    }
+    .item__text {
+
+    }
+  }
+  .opinion__dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .opinion__dot--active {
+    background-color: #717171;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+}
