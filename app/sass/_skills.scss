@@ -27,6 +27,21 @@
         background: var(--lightGrey);
         width: 100%;
         margin-bottom: 4rem;
+
+.progress__bar.start {
+  width: 0px;
+    background: #aae0aa;
+    -webkit-animation: eighty 2s ease-out forwards;
+       -moz-animation: eighty 2s ease-out forwards;
+        -ms-animation: eighty 2s ease-out forwards;
+         -o-animation: eighty 2s ease-out forwards;
+            animation: eighty 2s ease-out forwards;
+}
+
+
+
+
+
         .progress__bar {
           height: 5px;
           background: var(--lightGrey);

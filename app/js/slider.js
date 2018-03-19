@@ -40,9 +40,9 @@ function showOpinion() {
     opinionIndex++;
     if (opinionIndex > opinion.length) {opinionIndex = 1}
     for (i = 0; i < opiniondot.length; i++) {
-        opiniondot[i].className = opiniondot[i].className.replace(" active", "");
+        opiniondot[i].className = opiniondot[i].className.replace(" opinion__dot--active", "");
     }
     opinion[opinionIndex-1].style.display = "block";
-    opiniondot[opinionIndex-1].className += " active";
+    opiniondot[opinionIndex-1].className += " opinion__dot--active";
     setTimeout(showOpinion, 2000); // Change image every 2 seconds
 }

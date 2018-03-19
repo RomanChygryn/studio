@@ -26,12 +26,12 @@
         <div class="nav__mobile"><a id="nav-toggle" class="nav__mobile--toggle" href="javascript:void(0);" onclick="buttonChange()"><span></span></a></div>
         <ul class="nav__navbar" id="navbar">
           <li><a class="navbar__item" href="#">Home</a></li>
-          <li><a class="navbar__item" href="#">About</a></li>
-          <li><a class="navbar__item" href="#">Work</a></li>
-          <li><a class="navbar__item" href="#">Process</a></li>
-          <li><a class="navbar__item" href="#">Services</a></li>
-          <li><a class="navbar__item" href="#">Testimonials</a></li>
-          <li><a class="navbar__item" href="#">Contact</a></li>
+          <li><a class="navbar__item" href="#about">About</a></li>
+          <li><a class="navbar__item" href="#work">Work</a></li>
+          <li><a class="navbar__item" href="#process">Process</a></li>
+          <li><a class="navbar__item" href="#services">Services</a></li>
+          <li><a class="navbar__item" href="#opinion">Testimonials</a></li>
+          <li><a class="navbar__item" href="#contact">Contact</a></li>
         </ul>
       </nav>
       <!-- nav end -->
@@ -49,7 +49,7 @@
     <!-- header end -->
 
     <!-- about start -->
-    <section class="about">
+    <section class="about" id="about">
       <h1 class="about__title">About us</h1>
       <p class="about__content">Divide have don't man wherein air fourth. Own itself make have night won't make.<br>
 A you under Seed appear which good give. Own give air without fowl moveth dry first
@@ -153,7 +153,7 @@ heaven fruit, dominion she'd won't very all.
     <!-- stats end -->
 
     <!-- gallery start -->
-    <section class="gallery">
+    <section class="gallery" id="work">
       <div class="gallery__show">
         <div class="gallery__item">
           <img src="img/gallery/1.jpg" alt="">
@@ -307,7 +307,7 @@ heaven fruit, dominion she'd won't very all.
     <!-- gallery end -->
 
     <!-- work process start -->
-    <section class="work">
+    <section class="work" id="process">
       <div class="work__title title">
         <h1 class="title__content">our work process</h1>
         <p class="title__description">Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold years.</p>
@@ -320,7 +320,7 @@ heaven fruit, dominion she'd won't very all.
     <!-- work process end -->
 
     <!-- services start -->
-    <section class="service">
+    <section class="service" id="services">
       <div class="service__item">
         <span class="item__icon">
           <i class="far fa-gem fa-5x"></i>
@@ -382,20 +382,20 @@ heaven fruit, dominion she'd won't very all.
     <!-- services end -->
 
     <!-- section opinion -->
-    <section class="opinion">
+    <section class="opinion" id="opinion">
       <div class="opinion__item fade">
-        <p class="item__text">1 / 3</p>
-        <p class="item__name">Caption Text</p>
+        <p class="item__text">“Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.”</p>
+        <p class="item__name">Michael Hopkins</p>
       </div>
 
       <div class="opinion__item fade">
-        <p class="item__text">2 / 3</p>
-        <p class="item__name">Caption Two</p>
+        <p class="item__text">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui repellendus odit maiores placeat eius esse dignissimos voluptate, vitae perferendis officia?”</p>
+        <p class="item__name">Michael Jackson</p>
       </div>
 
       <div class="opinion__item fade">
-        <p class="item__text">3 / 3</p>
-        <p class="item__name">Caption Three</p>
+        <p class="item__text">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt maiores nostrum velit, perferendis atque, consequatur rerum culpa explicabo?”</p>
+        <p class="item__name">Robert Grin</p>
       </div>
 
       <div class="opinion__dots">
@@ -405,6 +405,68 @@ heaven fruit, dominion she'd won't very all.
       </div>
     </section>
     <!-- section opinion end -->
+
+    <!-- section brand start -->
+    <section class="brand">
+      <div class="brand__item"></div>
+      <div class="brand__item"></div>
+      <div class="brand__item"></div>
+      <div class="brand__item"></div>
+      <div class="brand__item"></div>
+    </section>
+    <!-- section brand end -->
+
+    <!-- form start -->
+    <div class="form__wrapper" id="contact">
+      <h2 class="form__title">Need a Project?</h1>
+      <p class="form__description">Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
+      <form class="form__content" action="action_page.php" >
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        <input type="email" id="email" name="email" placeholder="Your Email">
+        <input type="text" id="lname" name="title" placeholder="Your Title">
+
+        <textarea type="text" id="subject" name="subject" placeholder="Your Comment"></textarea>
+
+        <input type="submit" class="form__button btn" value="Send message">
+
+      </form>
+    </div>
+    <!-- form end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="footer__brand brand">
+        <h2 class="brand__title">Piroll Design, Inc.</h2>
+        <p class="brand__description">&copy; 2017 Piroll. All rights reserved</p>
+        <p class="brand__subdescription">Designed by robirurk</p>
+      </div>
+      <div class="footer__contact contact">
+        <a class="contact__email">hello@pirolltheme.com</a>
+        <a class="contact__tel">+44 987 065 908</a>
+      </div>
+      <div class="footer__navbar">
+        <ul class="navbar">
+          <li class="navbar__item"><a href="#">Projects</a></li>
+          <li class="navbar__item"><a href="#">About</a></li>
+          <li class="navbar__item"><a href="#">Services</a></li>
+          <li class="navbar__item"><a href="#">Career</a></li>
+          <li class="navbar__item"><a href="#">News</a></li>
+          <li class="navbar__item"><a href="#">Events</a></li>
+          <li class="navbar__item"><a href="#">Contact</a></li>
+          <li class="navbar__item"><a href="#">Legals</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <ul class="social__bar">
+          <li class="social__item"><a href="#">Facebook</a></li>
+          <li class="social__item"><a href="#">Twitter</a></li>
+          <li class="social__item"><a href="#">Instagram</a></li>
+          <li class="social__item"><a href="#">Dribble</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- footer end -->
+
   </div>
   <!-- wrapper end -->
 
@@ -418,6 +480,6 @@ heaven fruit, dominion she'd won't very all.
   <script type="text/javascript" src="js/loadmore.js"></script>
   <script type="text/javascript" src="js/lightbox.js"></script>
   <script type="text/javascript" src="js/opinion.js"></script>
-
+  <script type="text/javascript" src="js/anchor.js"></script>
 </body>
 </html>
