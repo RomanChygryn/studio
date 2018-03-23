@@ -1,14 +1,31 @@
+// var overlay = $('.overlay'),
+//     modal = $('.modal');
+// // console.log(overlay);
+//
+// if (document.getElementById('myModal').style.display == "flex") {
+//   overlay.style.display = 'none';
+// }
+
+$('.overlay').on('click', function(){
+  $(this).hide();
+});
+$('.gallery__item').mouseover(function(){
+  $('.overlay').show();
+});
+
 
 // Open the Modal
 function openModal() {
   document.getElementById('myModal').style.display = "flex";
 }
 
+
 // Close the Modal
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
 
+var modal = document.getElementById('myModal');
 var imageIndex = 1;
 showLightbox(imageIndex);
 

@@ -42,5 +42,10 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-right: 3rem;
+    .stat__item {
+      .item__icon {
+        margin-right: 4rem;
+      }
+    }
   }
 }

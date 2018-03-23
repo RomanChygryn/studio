@@ -97,3 +97,19 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .form__wrapper {
+    padding-top: 2rem;
+    .form__title {
+      margin: 1rem auto;
+    }
+    .form__description {
+      width: 90%;
+      margin-bottom: 1rem;
+    }
+    .form__content {
+      width: 90%;
+    }
+  }
+}

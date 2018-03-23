@@ -1,13 +1,16 @@
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
+  .dropdown {
+    display: none;
+  }
   .gallery__show,
   .gallery__hidden {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
   .gallery__hidden {
-    display: none;
+    display: grid;
   }
   .gallery__hidden--active {
     display: grid;
@@ -31,6 +34,7 @@
     position: relative;
     display: grid;
     &:hover > .overlay {
+          transition: background-color 0.5s ease;
       position: absolute;
        top: 0;
        width:100%;

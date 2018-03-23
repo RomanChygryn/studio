@@ -54,11 +54,17 @@
 }
 @media screen and (max-width: 500px) {
   .footer {
-    height: 300px;
+    grid-template: repeat(3, 33.3%) /  1fr;
+    height: auto;
     font-size: 1rem;
     .footer__brand {
       .brand__title {
         font-size: 1.2rem;
+      }
+    }
+    .footer__social {
+      .social__bar {
+        padding: 0;
       }
     }
   }
